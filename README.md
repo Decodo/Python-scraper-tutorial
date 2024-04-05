@@ -2,6 +2,8 @@
 <a href="https://dashboard.smartproxy.com/?page=residential-proxies&utm_source=socialorganic&utm_medium=social&utm_campaign=resi_trial_GITHUB"><img src="https://i.imgur.com/opsHIEZ.png"</a>
 </p>
 
+[![](https://dcbadge.vercel.app/api/server/gvJhWJPaB4)](https://discord.gg/sCr34yVDVB)
+
 <p align="center">
     <a href="https://github.com/Smartproxy/Smartproxy"> :house: Main Repository :house: </a>
 </p>
