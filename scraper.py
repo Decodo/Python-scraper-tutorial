@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-proxy = {'http': 'http://username:password@gate.smartproxy.com:10000'} # Proxy authentication information
+proxy = {'http': 'http://username:password@gate.decodo.com:10000'} # Proxy authentication information
 url = 'http://books.toscrape.com/' # Website to make a GET request to
 
 r = requests.get(url, proxies=proxy) # Make the GET request to a target URL using proxies
