@@ -1,11 +1,9 @@
 <p align="center">
-<a href="https://dashboard.smartproxy.com/?page=residential-proxies&utm_source=socialorganic&utm_medium=social&utm_campaign=resi_trial_GITHUB"><img src="https://i.imgur.com/opsHIEZ.png"</a>
+<a href="https://dashboard.decodo.com/?page=residential-proxies&utm_source=socialorganic&utm_medium=social&utm_campaign=resi_trial_GITHUB"><img src="https://github.com/user-attachments/assets/60bb48bd-8dcc-48b2-82c9-a218e1e4449c"></a>
 </p>
 
-[![](https://dcbadge.vercel.app/api/server/gvJhWJPaB4)](https://discord.gg/sCr34yVDVB)
-
 <p align="center">
-    <a href="https://github.com/Smartproxy/Smartproxy"> :house: Main Repository :house: </a>
+    <a href="https://github.com/Decodo/Decodo"> Main Repository </a>
 </p>
 
 ## Table of contents
@@ -23,7 +21,7 @@
 
 ## Disclaimer
 
-The following tutorial is meant for educational purposes and introduces the basics of building a web scraping project using Smartproxy proxies. You can read more about the [Requests](https://requests.readthedocs.io/en/master/user/quickstart/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) libraries in their documentation to learn more about them and build upon this example.
+The following tutorial is meant for educational purposes and introduces the basics of building a web scraping project using Decodo proxies. You can read more about the [Requests](https://requests.readthedocs.io/en/master/user/quickstart/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) libraries in their documentation to learn more about them and build upon this example.
 
 ## What is web scraping with Python?
 
@@ -44,13 +42,13 @@ To run the example scraper, you're going to need [Python](https://www.python.org
 To install the scraper example, run the following:
 
 ```
-git clone https://github.com/Smartproxy/Python-scraper-tutorial.git
+git clone https://github.com/Decodo/Python-scraper-tutorial.git
 ```
 
 or
 
 ```
-curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
+curl https://raw.githubusercontent.com/Decodo/Python-scraper-tutorial/master/scraper.py > scraper.py
 ```
 
 ## Be polite
@@ -87,7 +85,7 @@ Once you know exactly what you want from the site, you can inspect those element
 
 The Chrome DevTools will open and display the HTML structure of the page. You can manually search for the item you need or use the element picker tool in the top-left corner. Select it, hover over the item you need in the page and it'll find it in the HTML code. After a quick inspection, you can see that the main information on each book is located in the article element with a class name **product_pod**.
 
-![ezgif-5-718c9a2060](https://github.com/Smartproxy/Python-scraper-tutorial/assets/159907476/e229d3f4-1512-42ab-8390-e47a5fdecc5c)
+![ezgif-5-718c9a2060](https://github.com/Decodo/Python-scraper-tutorial/assets/159907476/e229d3f4-1512-42ab-8390-e47a5fdecc5c)
 
 
 All of the data you'll need is nested in the **article** element. Now, let's inspect the price. We can see that the price value is the text of the paragraph with the **price_color** class. If you inspect the In stock part, you can see that it's a text value of the **instock availability** paragraph. You can check out other elements on the page and see how they're represented in the HTML. Once you're done, let's build a simple web scraper to extract this data through code.
@@ -110,12 +108,12 @@ Then, you'll need to write a GET request to retrieve the contents of the site. A
 The ```requests.get``` function has only one required argument: the URL of the site you're targeting. However, you must pass in an additional proxy parameter because you'll want to use a proxy to reach the content. Declare these variables above your ```requests.get``` statement.
 
 ```python
-proxy = {'http': 'http://username:password@gate.smartproxy.com:10000'}
+proxy = {'http': 'http://username:password@gate.decodo.com:10000'}
 url = 'http://books.toscrape.com/'
 r = requests.get(url, proxies=proxy)
 ```
 
-For the proxy, you first need to specify its kind, in this case, HTTP. Then, you have to enter the Smartproxy username and password, separated by a colon, and the endpoint you'll be using to connect to the proxy server. In this example, we're using residential proxies. You can get this information from the dashboard by following these steps:
+For the proxy, you first need to specify its kind, in this case, HTTP. Then, you have to enter the Decodo username and password, separated by a colon, and the endpoint you'll be using to connect to the proxy server. In this example, we're using residential proxies. You can get this information from the dashboard by following these steps:
 1. Open the proxy setup tab.
 2. Navigate to the Endpoint generator.
 3. Configure the parameters according to your needs. Set your authentication method, location, session type, and protocol.
@@ -123,7 +121,7 @@ For the proxy, you first need to specify its kind, in this case, HTTP. Then, you
 5. Copy the endpoint(s).
 
 <p align="center">
-    <a href="https://smartproxy.com/"><img src="https://i.imgur.com/M2J00E4.png"></a>
+    <a href="https://Decodo.com/"><img src="https://i.imgur.com/M2J00E4.png"></a>
 </p>
 
 The ```url``` parameter is simply the address of the site you want to scrape.
@@ -137,7 +135,7 @@ The code so far should look like this:
 ```python
 import requests
 from bs4 import BeautifulSoup
-proxy = {'http': 'http://username:password@gate.smartproxy.com:10000'}
+proxy = {'http': 'http://username:password@gate.decodo.com:10000'}
 url = 'http://books.toscrape.com/'
 r = requests.get(url, proxies=proxy)
 print(r.content)
@@ -293,6 +291,6 @@ In this article, you've learned how to write a simple scraper script to get info
 ## Contact
 If you need any help or get stuck, feel free to contact us using one of the methods provided:
 
-Email - sales@smartproxy.com
+Email - sales@decodo.com
 
 <a href="https://direct.lc.chat/12092754/">Live chat 24/7</a>
