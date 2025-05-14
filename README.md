@@ -121,7 +121,7 @@ For the proxy, you first need to specify its kind, in this case, HTTP. Then, you
 5. Copy the endpoint(s).
 
 <p align="center">
-    <a href="https://Decodo.com/"><img src="https://i.imgur.com/M2J00E4.png"></a>
+    <a href="https://Decodo.com/">[<img src="https://i.imgur.com/Gj5HXZo.png"></a>
 </p>
 
 The ```url``` parameter is simply the address of the site you want to scrape.
